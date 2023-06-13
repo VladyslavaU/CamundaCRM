@@ -1,0 +1,14 @@
+camunda.bpm:
+  job-execution.enabled: false
+  id-generator: simple
+
+app:
+  url: http://localhost:8081/engine-rest
+
+spring:
+  jpa:
+    show-sql: true
+  datasource:
+    url: jdbc:p6spy:mysql://localhost:3306/dev?useUnicode=true&characterEncoding=UTF-8&characterSetResults=UTF-8&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC&useSSL=false
+    username: root
+    password: root
